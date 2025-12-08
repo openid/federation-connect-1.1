@@ -54,7 +54,7 @@ jobs:
             docker run -v `pwd`:/data danielfett/markdown2rfc openid-connect-federation-1_1.md
       - name: rename
         run: |
-            mv ./openid-connect-federation-1_1*.html ./html/$BRANCH_NAME.html
+            mv ./openid-connect-federation-1*.html ./html/$BRANCH_NAME.html
 
       - name: Deploy to GitHub Pages
         if: success()
