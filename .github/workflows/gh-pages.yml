@@ -30,9 +30,6 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
