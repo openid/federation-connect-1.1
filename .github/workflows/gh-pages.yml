@@ -30,12 +30,20 @@ concurrency:
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
         BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - name: install xml2rfc
+        run: |
+          pip install --upgrade pip
+          pip install xml2rfc
 
       - name: Show env
         run: echo "$GITHUB_CONTEXT"
@@ -49,12 +57,8 @@ jobs:
       - name: Show branch name
         run: echo "$BRANCH_NAME"
 
-      - name: Run the build process with Docker
-        run: |     
-            docker run -v `pwd`:/data danielfett/markdown2rfc openid-connect-federation-1_1.md
-      - name: rename
-        run: |
-            mv ./openid-connect-federation-1*.html ./html/$BRANCH_NAME.html
+      - name: build openid federation specs
+        run: xml2rfc --html openid-connect-federation-1_1.xml --out html/$BRANCH_NAME.html
 
       - name: Deploy to GitHub Pages
         if: success()
