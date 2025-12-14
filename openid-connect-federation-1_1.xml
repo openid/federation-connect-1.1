@@ -122,9 +122,12 @@
     <section anchor="Introduction" title="Introduction">
       <t>
 	NOTE:  This specification is starting life as a copy of
-	OpenID Federation 1.0 as of December 10, 2025.
+	OpenID Federation 1.0 <xref target="OpenID.Federation-1.0"/>
+	as of December 10, 2025.
 	The protocol-independent parts will be removed shortly,
-	and will live on in the OpenID Federation 1.1 specification.
+	and will live on in the
+	OpenID Federation 1.1 <xref target="OpenID.Federation-1.1"/>
+	specification.
       </t>
       <t>
         This specification describes how two Entities that would like to
@@ -10164,6 +10167,119 @@ HTTP/1.1 302 Found
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.6838.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8725.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.9525.xml"/>
+
+      <reference anchor="OpenID.Federation-1.0" target="https://openid.net/specs/openid-federation-1_0.html">
+        <front>
+          <title>OpenID Federation 1.0</title>
+
+	  <author fullname="Roland Hedberg" initials="R." role="editor"
+		  surname="Hedberg">
+	    <organization>independent</organization>
+	    <address>
+	      <email>roland@catalogix.se</email>
+	    </address>
+	  </author>
+
+	  <author fullname="Michael B. Jones" initials="M.B." surname="Jones">
+	    <organization abbrev="Self-Issued Consulting">Self-Issued Consulting</organization>
+	    <address>
+	      <email>michael_b_jones@hotmail.com</email>
+	      <uri>https://self-issued.info/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="Andreas Åkre Solberg" initials="A.Å."
+		  surname="Solberg">
+	    <organization>Sikt</organization>
+	    <address>
+	      <email>Andreas.Solberg@sikt.no</email>
+	      <uri>https://www.linkedin.com/in/andreassolberg/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="John Bradley" initials="J." surname="Bradley">
+	    <organization abbrev="Yubico">Yubico</organization>
+	    <address>
+	      <email>ve7jtb@ve7jtb.com</email>
+	      <uri>http://www.thread-safe.com/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="Giuseppe De Marco" initials="G." surname="De Marco">
+	    <organization>independent</organization>
+	    <address>
+	      <email>demarcog83@gmail.com</email>
+	      <uri>https://www.linkedin.com/in/giuseppe-de-marco-bb054245/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="Vladimir Dzhuvinov" initials="V." surname="Dzhuvinov">
+	    <organization>Connect2id</organization>
+	    <address>
+	      <email>vladimir@connect2id.com</email>
+	      <uri>https://twitter.com/dzhuvi</uri>
+	    </address>
+	  </author>
+
+          <date day="4" month="December" year="2025"/>
+        </front>
+      </reference>
+
+      <reference anchor="OpenID.Federation-1.1" target="https://openid.github.io/federation-1.1/main.html">
+        <front>
+          <title>OpenID Federation 1.1</title>
+
+	  <author fullname="Roland Hedberg" initials="R." surname="Hedberg">
+	    <organization>independent</organization>
+	    <address>
+	      <email>roland@catalogix.se</email>
+	    </address>
+	  </author>
+
+	  <author fullname="Michael B. Jones" initials="M.B." surname="Jones" role="editor">
+	    <organization abbrev="Self-Issued Consulting">Self-Issued Consulting</organization>
+	    <address>
+	      <email>michael_b_jones@hotmail.com</email>
+	      <uri>https://self-issued.info/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="Giuseppe De Marco" initials="G." surname="De Marco">
+	    <organization>independent</organization>
+	    <address>
+	      <email>demarcog83@gmail.com</email>
+	      <uri>https://www.linkedin.com/in/giuseppe-de-marco-bb054245/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="Andreas Åkre Solberg" initials="A.Å."
+		  surname="Solberg">
+	    <organization>Sikt</organization>
+	    <address>
+	      <email>Andreas.Solberg@sikt.no</email>
+	      <uri>https://www.linkedin.com/in/andreassolberg/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="John Bradley" initials="J." surname="Bradley">
+	    <organization abbrev="Yubico">Yubico</organization>
+	    <address>
+	      <email>ve7jtb@ve7jtb.com</email>
+	      <uri>http://www.thread-safe.com/</uri>
+	    </address>
+	  </author>
+
+	  <author fullname="Vladimir Dzhuvinov" initials="V." surname="Dzhuvinov">
+	    <organization>Connect2id</organization>
+	    <address>
+	      <email>vladimir@connect2id.com</email>
+	      <uri>https://twitter.com/dzhuvi</uri>
+	    </address>
+	  </author>
+
+          <date day="13" month="December" year="2025"/>
+        </front>
+      </reference>
 
       <reference anchor="FAPI"
                  target="https://openid.net/specs/openid-financial-api-part-2-1_0.html">
