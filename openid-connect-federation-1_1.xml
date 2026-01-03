@@ -1917,7 +1917,7 @@ HTTP/1.1 302 Found
       <t>
 	This specification defines no general-purpose JWT Claims.
 	Those defined in
-	<relref section="13" relative="#GeneralPurposeClaims-statement" target="OpenID.Federation-1.1"/>
+	<relref section="13" relative="#GeneralPurposeClaims" target="OpenID.Federation-1.1"/>
 	are used by this specification.
       </t>
     </section>
