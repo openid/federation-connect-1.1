@@ -77,7 +77,7 @@
       </address>
     </author>
 
-    <date day="7" month="January" year="2026"/>
+    <date day="11" month="January" year="2026"/>
 
     <workgroup>OpenID Connect Working Group</workgroup>
 
@@ -2110,7 +2110,7 @@ HTTP/1.1 302 Found
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.9126.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.9728.xml"/>
 
-      <reference anchor="OpenID.Federation-1.1" target="https://openid.github.io/federation-1.1/main.html">
+      <reference anchor="OpenID.Federation-1.1" target="https://openid.net/specs/openid-federation-1_1.html">
         <front>
           <title>OpenID Federation 1.1</title>
 
@@ -2272,7 +2272,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="19" month="September" year="2025"/>
+          <date day="8" month="January" year="2026" />
 	</front>
       </reference>
 
