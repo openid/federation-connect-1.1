@@ -1,6 +1,6 @@
-# OpenID Connect Federation 1.1
+# OpenID Federation for OpenID Connect 1.1
 
-The OpenID Connect Federation 1.1 specification contains the protocol-specific functionality defined in [OpenID Federation 1.0](https://openid.net/specs/openid-federation-1_0.html).
+The OpenID Federation for OpenID Connect 1.1 specification contains the protocol-specific functionality defined in [OpenID Federation 1.0](https://openid.net/specs/openid-federation-1_0.html).
 This includes Entity Type Identifiers and Metadata for OpenID Connect and OAuth 2.0 Entities and Client Registration flows.
 These can be used in multilateral federations for the purpose of establishing trust,
 in combination with the protocol-independent functionality defined in OpenID Federation 1.1.

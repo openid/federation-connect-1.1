@@ -12,7 +12,7 @@
   document and not a private document, as the private="..." declaration could
   be taken to indicate.
 -->
-<rfc category="std" docName="openid-connect-federation-1_1" ipr="none"
+<rfc category="std" docName="openid-federation-connect-1_1" ipr="none"
      submissionType="IETF" consensus="true"
      xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -25,7 +25,7 @@
   <?rfc private="Draft" ?>
 
   <front>
-    <title abbrev="OpenID Connect Federation 1.1">OpenID Connect Federation 1.1 -
+    <title abbrev="OpenID Federation for OpenID Connect 1.1">OpenID Federation for OpenID Connect 1.1 -
       draft 00
     </title>
 
@@ -3639,7 +3639,7 @@ Host: op.umu.se
     </section>
 
     <section anchor="Acknowledgements" title="Acknowledgements" numbered="no">
-      <section anchor="Ack1.1" title="OpenID Connect Federation 1.1 Acknowledgements" numbered="no">
+      <section anchor="Ack1.1" title="OpenID Federation for OpenID Connect 1.1 Acknowledgements" numbered="no">
 	<t>
 	  The authors wish to acknowledge the contributions of the following
 	  individuals and organizations to this specification:
