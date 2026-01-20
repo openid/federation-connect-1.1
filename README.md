@@ -8,30 +8,25 @@ This specification introduces no new functionality not present in OpenID Federat
 
 ## Releases
 
-The latest released draft of the specification is https://openid.net/specs/openid-connect-federation-1_1.html.
+The latest released draft of the specification is https://openid.net/specs/openid-federation-connect-1_1.html.
 
 ## Current Builds
 
-The latest editors' draft is [https://openid.github.io/connect-federation-1.1/main.html](https://openid.github.io/connect-federation-1.1/main.html).
+The latest editors' draft is https://openid.github.io/federation-connect-1.1/main.html.
 
-Previews for each branch of this project are automatically built and published at the URL https://openid.github.io/connect-federation-1.1/$branchname.html.
+Previews for each branch of this project are automatically built and published at the URL https://openid.github.io/federation-connect-1.1/$branchname.html.
 Previews for branches associated with pending Pull Requests are accessible using this pattern.
-
-## News
-
-News about OpenID Federation is available at the OpenID Foundation website [here](https://openid.net/tag/federation/).
 
 ## Working on the Specification
 
 To get started working on the specification, clone this repository and review the documentation provided in the root directory.
 
 ````bash
-git clone https://github.com/openid/connect-federation-1.1.git
-cd connect-federation-1.1
+git clone https://github.com/openid/federation-connect-1.1.git
+cd federation-connect-1.1
 ````
 Read [CONTRIBUTING.md](CONTRIBUTING.md) to learn how to contribute to this project.
 
 ## Contact Info
 
 For further information and to get involved, visit the [OpenID Connect Working Group website](https://openid.net/wg/connect/).
-
