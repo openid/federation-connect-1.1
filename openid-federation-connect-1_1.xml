@@ -77,7 +77,7 @@
       </address>
     </author>
 
-    <date day="25" month="January" year="2026"/>
+    <date day="1" month="February" year="2026"/>
 
     <workgroup>OpenID Connect Working Group</workgroup>
 
@@ -154,8 +154,8 @@
           by <xref target="OpenID.Core">OpenID Connect Core 1.0</xref>, and
 	  the terms "Authorization Endpoint", "Authorization Server (AS)",
 	  "Client", "Client Authentication", "Client Identifier", "Client Secret",
-	  "Grant Type", "Protected Resource", "Redirection URI", "Refresh Token",
-	  "Resource Server (RS)", and "Token Endpoint"
+	  "Protected Resource", "Redirection URI", "Refresh Token",
+	  and "Token Endpoint"
 	  defined by <xref target="RFC6749">OAuth 2.0</xref>.
 	  It incorporates the terms defined in
 	  <relref section="1.2" relative="#Terminology" target="OpenID.Federation-1.1"/>
@@ -2169,7 +2169,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="20" month="January" year="2026"/>
+          <date day="1" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -2367,7 +2367,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="20" month="January" year="2026"/>
+          <date day="1" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -3629,7 +3629,7 @@ Host: op.umu.se
 	<list style="symbols">
 	  <t>
 	    Moved statement about signing Entity Statements with "RS256"
-	    to this specification from OpenID Federationd 1.1
+	    to this specification from OpenID Federation 1.1
 	    since the motivation for supporting it comes from OpenID Connect.
 	  </t>
 	</list>
