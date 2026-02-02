@@ -26,7 +26,7 @@
 
   <front>
     <title abbrev="OpenID Federation for OpenID Connect 1.1">OpenID Federation for OpenID Connect 1.1 -
-      draft 01
+      draft 02
     </title>
 
     <author fullname="Roland Hedberg" initials="R." surname="Hedberg">
@@ -77,7 +77,7 @@
       </address>
     </author>
 
-    <date day="20" month="January" year="2026"/>
+    <date day="1" month="February" year="2026"/>
 
     <workgroup>OpenID Connect Working Group</workgroup>
 
@@ -154,8 +154,8 @@
           by <xref target="OpenID.Core">OpenID Connect Core 1.0</xref>, and
 	  the terms "Authorization Endpoint", "Authorization Server (AS)",
 	  "Client", "Client Authentication", "Client Identifier", "Client Secret",
-	  "Grant Type", "Protected Resource", "Redirection URI", "Refresh Token",
-	  "Resource Server (RS)", and "Token Endpoint"
+	  "Protected Resource", "Redirection URI", "Refresh Token",
+	  and "Token Endpoint"
 	  defined by <xref target="RFC6749">OAuth 2.0</xref>.
 	  It incorporates the terms defined in
 	  <relref section="1.2" relative="#Terminology" target="OpenID.Federation-1.1"/>
@@ -199,6 +199,13 @@
         <t>
 	  Entity Statements are used in this specification as defined in
 	  <relref section="3" relative="#entity-statement" target="OpenID.Federation-1.1"/>.
+	  When used with this specification,
+	  implementations SHOULD support signature verification of Entity Statements with
+          the RSA SHA-256 algorithm because OpenID Connect Core
+          requires support for it (<spanx style="verb">alg</spanx>
+          value of <spanx style="verb">RS256</spanx>).
+          Federations MAY also specify different mandatory-to-implement algorithms.
+
 	</t>
 
 	<section anchor="ESClaims" title="Entity Statement Claims">
@@ -2029,7 +2036,7 @@ HTTP/1.1 302 Found
           Some of the interfaces defined in this specification could be used for
           Denial-of-Service attacks (DoS), most notably,
           Explicit Client Registration
-          (<xref target="explicit"/>), and
+          (<xref target="explicit"/>) and
           Automatic Client Registration (<xref target="automatic"/>) can
           be exploited as vectors of HTTP propagation attacks.
           Below is an explanation of how such an attack can occur and
@@ -2085,7 +2092,7 @@ HTTP/1.1 302 Found
       <t>
 	This specification makes no requests of IANA.
 	It relies on the IANA registrations already made in
-	<relref section="20" relative="#IANA" target="OpenID.Federation-1.0"/>.
+	<relref section="20" relative="#IANA" target="OpenID.Federation-1.0">OpenID Federation 1.0</relref>.
       </t>
     </section>
 
@@ -2162,7 +2169,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="20" month="January" year="2026"/>
+          <date day="1" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -2360,7 +2367,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="20" month="January" year="2026"/>
+          <date day="1" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -3616,6 +3623,17 @@ Host: op.umu.se
 
     <section anchor="History" title="Document History">
       <t>[[ To be removed from the final specification ]]</t>
+
+      <t>
+	-02
+	<list style="symbols">
+	  <t>
+	    Moved statement about signing Entity Statements with "RS256"
+	    to this specification from OpenID Federation 1.1
+	    since the motivation for supporting it comes from OpenID Connect.
+	  </t>
+	</list>
+      </t>
 
       <t>
 	-01
