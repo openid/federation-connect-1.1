@@ -26,7 +26,7 @@
 
   <front>
     <title abbrev="OpenID Federation for OpenID Connect 1.1">OpenID Federation for OpenID Connect 1.1 -
-      draft 02
+      draft 03
     </title>
 
     <author fullname="Roland Hedberg" initials="R." surname="Hedberg">
@@ -77,7 +77,7 @@
       </address>
     </author>
 
-    <date day="1" month="February" year="2026"/>
+    <date day="9" month="February" year="2026"/>
 
     <workgroup>OpenID Connect Working Group</workgroup>
 
@@ -265,7 +265,7 @@
 		If the <spanx style="verb">aud</spanx> Claim is present,
 		if the Entity Statement is an Explicit Registration request,
 		validate that the value is the Entity Identifier for an OP,
-		or if the Entity Statement is an Explicit Registration request,
+		or if the Entity Statement is an Explicit Registration response,
 		validate that the value is the Entity Identifier for an RP.
 		This Claim MUST NOT be present in Entity Statements that are not
 		Explicit Registration requests or responses
@@ -3625,6 +3625,15 @@ Host: op.umu.se
       <t>[[ To be removed from the final specification ]]</t>
 
       <t>
+	-03
+	<list style="symbols">
+	  <t>
+	     Corrected typo in Entity Statement Validation text.
+	  </t>
+	</list>
+      </t>
+
+      <t>
 	-02
 	<list style="symbols">
 	  <t>
@@ -3725,6 +3734,7 @@ Host: op.umu.se
 	Sean Turner,
 	Davide Vaghetti,
 	Niels van Dijk,
+	Luiky Vasconcelos,
 	Tim Würtele,
 	Kristina Yasuda,
 	Gabriel Zachmann,
