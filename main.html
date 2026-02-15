@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta content="Common,Latin" name="scripts">
 <meta content="initial-scale=1.0" name="viewport">
-<title>OpenID Federation for OpenID Connect 1.1 - draft 02</title>
+<title>OpenID Federation for OpenID Connect 1.1 - draft 03</title>
 <meta content="Roland Hedberg" name="author">
 <meta content="Michael B. Jones" name="author">
 <meta content="Giuseppe De Marco" name="author">
@@ -59,7 +59,7 @@
     pycountry 24.6.1
     PyYAML 6.0.1
     requests 2.31.0
-    wcwidth 0.5.3
+    wcwidth 0.6.0
 -->
 <link href="openid-federation-connect-1_1.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1265,7 +1265,7 @@ li > p:last-of-type:only-child {
 <dd class="workgroup">OpenID Connect Working Group</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-02-01" class="published">1 February 2026</time>
+<time datetime="2026-02-09" class="published">9 February 2026</time>
     </dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
@@ -1297,7 +1297,7 @@ li > p:last-of-type:only-child {
 </dd>
 </dl>
 </div>
-<h1 id="title">OpenID Federation for OpenID Connect 1.1 - draft 02</h1>
+<h1 id="title">OpenID Federation for OpenID Connect 1.1 - draft 03</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">
@@ -1800,7 +1800,7 @@ li > p:last-of-type:only-child {
  If the <code>aud</code> Claim is present,
  if the Entity Statement is an Explicit Registration request,
  validate that the value is the Entity Identifier for an OP,
- or if the Entity Statement is an Explicit Registration request,
+ or if the Entity Statement is an Explicit Registration response,
  validate that the value is the Entity Identifier for an RP.
  This Claim MUST NOT be present in Entity Statements that are not
  Explicit Registration requests or responses
@@ -5139,43 +5139,51 @@ Host: op.umu.se
       </h2>
 <p id="appendix-C-1">[[ To be removed from the final specification ]]<a href="#appendix-C-1" class="pilcrow">¶</a></p>
 <p id="appendix-C-2">
- -02<a href="#appendix-C-2" class="pilcrow">¶</a></p>
+ -03<a href="#appendix-C-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-C-3.1">
           <p id="appendix-C-3.1.1">
-     Moved statement about signing Entity Statements with "RS256"
-     to this specification from OpenID Federation 1.1
-     since the motivation for supporting it comes from OpenID Connect.<a href="#appendix-C-3.1.1" class="pilcrow">¶</a></p>
+      Corrected typo in Entity Statement Validation text.<a href="#appendix-C-3.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-C-4">
- -01<a href="#appendix-C-4" class="pilcrow">¶</a></p>
+ -02<a href="#appendix-C-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-C-5.1">
           <p id="appendix-C-5.1.1">
-     Renamed this specification to OpenID Federation for OpenID Connect 1.1.
-     It was previously named OpenID Connect Federation 1.1.<a href="#appendix-C-5.1.1" class="pilcrow">¶</a></p>
-</li>
-        <li class="normal" id="appendix-C-5.2">
-          <p id="appendix-C-5.2.1">
-     Merged in changes made to OpenID Federation 1.0 between
-     January 7 and January 19, 2026.<a href="#appendix-C-5.2.1" class="pilcrow">¶</a></p>
+     Moved statement about signing Entity Statements with "RS256"
+     to this specification from OpenID Federation 1.1
+     since the motivation for supporting it comes from OpenID Connect.<a href="#appendix-C-5.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-C-6">
- -00<a href="#appendix-C-6" class="pilcrow">¶</a></p>
+ -01<a href="#appendix-C-6" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-C-7.1">
           <p id="appendix-C-7.1.1">
-     Began life as a copy of OpenID Federation 1.0 as of December 10, 2025.<a href="#appendix-C-7.1.1" class="pilcrow">¶</a></p>
+     Renamed this specification to OpenID Federation for OpenID Connect 1.1.
+     It was previously named OpenID Connect Federation 1.1.<a href="#appendix-C-7.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="appendix-C-7.2">
           <p id="appendix-C-7.2.1">
-     Removed protocol-independent functionality.<a href="#appendix-C-7.2.1" class="pilcrow">¶</a></p>
+     Merged in changes made to OpenID Federation 1.0 between
+     January 7 and January 19, 2026.<a href="#appendix-C-7.2.1" class="pilcrow">¶</a></p>
 </li>
-        <li class="normal" id="appendix-C-7.3">
-          <p id="appendix-C-7.3.1">
-     Merged in changes made to OpenID Federation 1.0 as of January 7, 2026.<a href="#appendix-C-7.3.1" class="pilcrow">¶</a></p>
+      </ul>
+<p id="appendix-C-8">
+ -00<a href="#appendix-C-8" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="appendix-C-9.1">
+          <p id="appendix-C-9.1.1">
+     Began life as a copy of OpenID Federation 1.0 as of December 10, 2025.<a href="#appendix-C-9.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-C-9.2">
+          <p id="appendix-C-9.2.1">
+     Removed protocol-independent functionality.<a href="#appendix-C-9.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-C-9.3">
+          <p id="appendix-C-9.3.1">
+     Merged in changes made to OpenID Federation 1.0 as of January 7, 2026.<a href="#appendix-C-9.3.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -5251,6 +5259,7 @@ Host: op.umu.se
  Sean Turner,
  Davide Vaghetti,
  Niels van Dijk,
+ Luiky Vasconcelos,
  Tim Würtele,
  Kristina Yasuda,
  Gabriel Zachmann,
