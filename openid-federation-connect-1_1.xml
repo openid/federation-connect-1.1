@@ -77,7 +77,7 @@
       </address>
     </author>
 
-    <date day="9" month="February" year="2026"/>
+    <date day="15" month="February" year="2026"/>
 
     <workgroup>OpenID Connect Working Group</workgroup>
 
@@ -2169,7 +2169,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="1" month="February" year="2026"/>
+          <date day="15" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -2367,7 +2367,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="1" month="February" year="2026"/>
+          <date day="15" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -3628,7 +3628,7 @@ Host: op.umu.se
 	-03
 	<list style="symbols">
 	  <t>
-	     Corrected typo in Entity Statement Validation text.
+	    Corrected typo in Entity Statement Validation text.
 	  </t>
 	</list>
       </t>
