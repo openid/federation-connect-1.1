@@ -26,7 +26,7 @@
 
   <front>
     <title abbrev="OpenID Federation for OpenID Connect 1.1">OpenID Federation for OpenID Connect 1.1 -
-      draft 03
+      draft 04
     </title>
 
     <author fullname="Roland Hedberg" initials="R." surname="Hedberg">
@@ -77,7 +77,7 @@
       </address>
     </author>
 
-    <date day="15" month="February" year="2026"/>
+    <date day="17" month="February" year="2026"/>
 
     <workgroup>OpenID Connect Working Group</workgroup>
 
@@ -2169,7 +2169,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="15" month="February" year="2026"/>
+          <date day="17" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -2367,7 +2367,7 @@ HTTP/1.1 302 Found
 	    </address>
 	  </author>
 
-          <date day="15" month="February" year="2026"/>
+          <date day="17" month="February" year="2026"/>
         </front>
       </reference>
 
@@ -3625,6 +3625,15 @@ Host: op.umu.se
       <t>[[ To be removed from the final specification ]]</t>
 
       <t>
+	-04
+	<list style="symbols">
+	  <t>
+	    Synced acknowledgements with OpenID Federation 1.0.
+	  </t>
+	</list>
+      </t>
+
+      <t>
 	-03
 	<list style="symbols">
 	  <t>
@@ -3735,6 +3744,7 @@ Host: op.umu.se
 	Davide Vaghetti,
 	Niels van Dijk,
 	Luiky Vasconcelos,
+	Elaine Wooton,
 	Tim Würtele,
 	Kristina Yasuda,
 	Gabriel Zachmann,
