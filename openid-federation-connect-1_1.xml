@@ -943,7 +943,8 @@ GET /authorize?
                 Client ID
                 is a valid URL, and the OP does not have the Client ID
                 registered as a known
-                client, then the OP SHOULD resolve the Trust Chains
+                client using the RP's Entity Configuration,
+                then the OP SHOULD resolve the Trust Chains
                 related to the requestor.
               </t>
               <t>
@@ -3629,6 +3630,10 @@ Host: op.umu.se
 	<list style="symbols">
 	  <t>
 	    Referenced final OpenID Connect Relying Party Metadata Choices 1.0 specification.
+	  </t>
+	  <t>
+	    Clarification to make the description in
+	    <xref target="AuthzRequestProcessing"/> more explicit.
 	  </t>
 	</list>
       </t>
