@@ -35,7 +35,7 @@
  This specification introduces no new functionality not present in OpenID Federation 1.0.
        
     " name="description">
-<meta content="xml2rfc 3.32.0" name="generator">
+<meta content="xml2rfc 3.33.0" name="generator">
 <meta content="OpenID" name="keyword">
 <meta content="OpenID Connect" name="keyword">
 <meta content="Federation" name="keyword">
@@ -48,13 +48,13 @@
 <meta content="Trust Mark" name="keyword">
 <meta content="openid-federation-connect-1_1" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.32.0
+  xml2rfc 3.33.0
     Python 3.12.3
     ConfigArgParse 1.7.5
     google-i18n-address 3.1.1
     intervaltree 3.2.1
     Jinja2 3.1.2
-    lxml 6.0.2
+    lxml 6.0.4
     platformdirs 4.9.4
     pycountry 26.2.16
     PyYAML 6.0.1
@@ -2527,7 +2527,8 @@ GET /authorize?
                 Client ID
                 is a valid URL, and the OP does not have the Client ID
                 registered as a known
-                client, then the OP SHOULD resolve the Trust Chains
+                client using the RP's Entity Configuration,
+                then the OP SHOULD resolve the Trust Chains
                 related to the requestor.<a href="#section-12.1.1.1.2-1" class="pilcrow">¶</a></p>
 <p id="section-12.1.1.1.2-2">
                 An RP MAY include a Trust Chain from itself
@@ -5144,6 +5145,11 @@ Host: op.umu.se
 <li class="normal" id="appendix-C-3.1">
           <p id="appendix-C-3.1.1">
      Referenced final OpenID Connect Relying Party Metadata Choices 1.0 specification.<a href="#appendix-C-3.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-C-3.2">
+          <p id="appendix-C-3.2.1">
+     Clarification to make the description in
+     <a href="#AuthzRequestProcessing" class="auto internal xref">Section 12.1.1.1.2</a> more explicit.<a href="#appendix-C-3.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-C-4">
